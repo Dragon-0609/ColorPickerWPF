@@ -876,7 +876,6 @@ namespace akr.WPF.Controls
                 if (item.Content != null)
                 {
                     bool hsvVisible = item.Content.ToString () == "HSV";
-                    Console.WriteLine ($"Current: {item.Content.ToString ()} , Visible: {hsvVisible}");
                     HSVSliderStackPanel.Visibility = hsvVisible ? Visibility.Visible : Visibility.Collapsed;
                     RGBSliderStackPanel.Visibility = hsvVisible ? Visibility.Collapsed : Visibility.Visible;
                 }
